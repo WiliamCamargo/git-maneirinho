@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+html {
+    background-color: lightslategrey;
+}
+
+body {
+    background-color: white;
+    width: 1024px;
+    margin: 0px auto 0px auto;
+}
+
+nav, article {
+    margin: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    padding: 10px 10px;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: white;
+    background-color: purple;
+}
+
+article {
+    width: 512px;
+    margin-top: 0px;
+}
