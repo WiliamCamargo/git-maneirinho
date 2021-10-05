@@ -10,8 +10,8 @@ body {
     margin: 0px auto 0px auto;
 }
 
-nav, article {
-    margin: 20px;
+*{
+    font-family: 'Roboto', sans-serif;
 }
 
 nav ul {
@@ -34,7 +34,31 @@ nav ul li a:hover {
     background-color: purple;
 }
 
-article {
-    width: 512px;
-    margin-top: 0px;
+nav, article {
+    padding: 22px 22px 0px 22px;
+}
+
+.topico {
+    width: 1024px;
+    text-align: center;
+}
+
+.esquerda {
+    width: 50%;
+    height: 550px;
+    float: left;
+}
+
+.direita {
+    width: 50%;
+    height: 550px;
+    float: right;
+}
+
+.img-tutorial {
+    padding: 0px 20px;
+}
+
+footer {
+    clear: both;
 }
