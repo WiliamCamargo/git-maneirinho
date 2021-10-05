@@ -11,6 +11,7 @@ body {
 }
 
 *{
+    margin: 0;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -45,18 +46,12 @@ nav, article {
 
 .esquerda {
     width: 50%;
-    height: 550px;
     float: left;
 }
 
 .direita {
     width: 50%;
-    height: 550px;
     float: right;
-}
-
-.img-tutorial {
-    padding: 0px 20px;
 }
 
 footer {
