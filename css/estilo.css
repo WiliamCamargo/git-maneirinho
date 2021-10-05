@@ -54,6 +54,10 @@ nav, article {
     float: right;
 }
 
+h1 {
+    clear: both;
+}
+
 footer {
     clear: both;
 }
