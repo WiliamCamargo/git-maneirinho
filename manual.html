@@ -1,12 +1,19 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
-    <title>Git Maneirinho</title>
+    <title>Manual</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
-<body>
+
+<body class="manual">
+
     <header>
-        Aqui vai o header
+        <img src="./images/logo.png" alt="logo escrito: Manual do Git Maneirinho">
     </header>
     <nav>
         <ul>
@@ -17,14 +24,179 @@
             <li><a href="equipe.html">Equipe</a></li>
         </ul>
     </nav>
+    
+    <h1>Manual Básico do Git Maneirinho</h1>
     <article>
-        Aqui vai todo o conteúdo da página
+        <h2>Primeiros Passos do Giteiro</h2>
+        <section class="cardManual">
+            <section class="iconesManual">
+                <img src="./images/manualXicara.png" alt="Icons made by href=https://www.flaticon.com/ Flaticon">
+                <h3>Pegue uma xícara de café antes de começar</h3>
+            </section>
+            <section class="iconesManual">
+                <img src="./images/manualEmoji.png" alt="Icons made by href=https://www.flaticon.com/ Flaticon">
+                <h3>Sem desespero!</h3>
+            </section>
+            <section class="iconesManual">
+                <img src="./images/manualConsole.png" alt="Icons made by href=https://www.flaticon.com/ Flaticon">
+                <h3>Vamos aprender a usar o git</h3>
+            </section>
+        </section>
+        <h2>Os comandos do Giteiro</h2>
+        <section class="sectionManual">
+            <h3>Git: Como iniciar uma pasta git</h3>
+            <p>Para começar um projeto com controle de versionamento é necessário que na pasta desejada coloque o
+                seguinte comando:</p>
+            <pre><code>git init</code></pre>
+            <p>Esse comando cria uma pasta oculta no seu repositório e partir dele você pode executar todos os comandos
+                do git nesse repositório!</p>
+        </section>
+        <section class="sectionManual">
+            <h3>Config: Como configurar seu repositório</h3>
+            <p>Existem vários comandos de config possíveis de executar, mas dentre os principais e muito importantes
+                estão os seguintes: </p>
+            <pre> <code>git config user.name "Nome"</code></pre>
+            <p>Esse comando define o nome que for inserido entre aspas como o nome do "Criador" desse repositório. Olha
+                que interessante, o mesmo serve para o email conforme abaixo:</p>
+            <pre> <code>git config user.email "Email"</code></pre>
+            <p>Esse comando define o email que for inserido entre aspas como o email do "Criador" desse repositório.
+            </p>
+            <p class="dicaManual">
+                <span><strong>Dica!</strong> Caso queira definir de forma que seja aplicado para todos os repositórios que iniciar em sua máquina, sem
+                    que seja necessário fazer toda vez que iniciar uma pasta git, acrescente o seguinte comando logo após a
+                    palavra config: <code class="simplesCode">--global</code></span>
+            </p>
+            
+        </section>
+        <section class="sectionManual">
+            <h3>Status: Como visualizar as alterações locais</h3>
+            <p>Você realizou uma série de alterações na sua pasta, e agora? Quais arquivos foram alterados? Não se
+                lembra? Então o comando para te ajudar é o seguinte:</p>
+            <pre> <code>git status</code></pre>
+            <p>Toda vez que esse comando é executado ele mostra todos os arquivos que foram modificados dentro da sua
+                pasta!</p>
+        </section>
+        <section class="sectionManual">
+            <h3>Add: Como aplicar as alterações locais</h3>
+            <p>Ok, no comando anterior você aprendeu a visualizar quais arquivos sofreram alterações, muito bem. Agora é
+                o momento de adicionar essas alterações para incluí-las de fato no que vai ser enviado para o
+                repositório online. Você pode fazer das seguintes formas:</p>
+            <pre> <code>git add nomeDoArquivo</code></pre>
+            <p>
+                Esse comando permite que você adicione um arquivo por vez, especificando o seu nome.
+            </p>
+            <p>
+                Agora se a intenção é agilizar o processo, esses dois comandos são utilizados para adicionar todos os
+                arquivos que sofreram alteração na pasta de uma só vez:
+            </p>
+            <pre> <code>git add .</code></pre>
+            <p>ou</p>
+            <pre> <code>git add *</code></pre>
+
+            <p class="dicaManual">
+                <span><strong>Dica!</strong> 
+                Uma boa ideia após adicionar seus arquivos, é executar o comando git status, pois ele mostrará os
+                arquivos que foram adicionados e os que não foram de forma separada.
+            </p>
+        </section>
+        <section class="sectionManual">
+            <h3>Commit: Como "entiquetar" as alterações feitas</h3>
+            <p>Depois de adicionar seus arquivos é hora de dar um significado à eles em conjunto. O commit serve como
+                uma espécie de etiqueta para as alterações, nele você coloca uma mensagem significativa sobre aquela
+                alteração que está sendo adicionada. Para isso utilizamos os comandos:</p>
+
+            <pre> <code>git commit</code></pre>
+            <p>
+                Caso opte por esse comando, uma telinha de edição abrirá no console para que você digite a mensagem
+                daquele commit, após terminar basta digitar :wq, que escreverá sua mensagem e sairá da tela de edição.
+                No entanto, existe uma forma mais simples de executar esse comando, como essa abaixo:
+            </p>
+            <pre> <code>git commit -m "Nome do Commit"</code></pre>
+            <p>
+                Nesse caso a mensagem do commit é colocada entre aspas logo após o comando -m, a vantagem é que não abre
+                nenhuma caixa de edição! Seu commit é feito rapidinho.
+            </p>
+            <p class="dicaManual">
+                <span><strong>Dica!</strong> Opte sempre por escrever mensagens signiticativas, e também é uma boa prática não adicionar seu projeto
+                todo de uma vez em um único commit, mas sim fazer vários commits de acordo com alterações relevantes.
+            </p>
+        </section>
+        <section class="sectionManual">
+            <h3>Push: Enviar alterações locais para o repositório</h3>
+            <p>Bom, depois de adicionar e commitar, tá na hora de mandar as alterações pro repositório online! Para isso
+                utlizamos o comando:</p>
+            <pre> <code>git push linkDoRepositório</code></pre>
+        </section>
+        <section class="sectionManual">
+            <h3>Clone: Clonar um repositório na sua máquina</h3>
+            <p>Vamos supor que você está viajando e recebe uma ligação dizendo que precisa alterar um código que está
+                incorreto no seu trabalho. Tudo bem, você tem a pasta na sua máquina desde sempre, pois foi lá que criou
+                todo o projeto. Porém, você esqueceu de levar seu notebook na viagem! E agora? Seu colega que está com
+                você e trouxe o dele disse que poderia te emprestar. Mas, como você acessa seu repositório na máquina
+                dele? Muito bem, você utiliza o comando:</p>
+            <pre> <code>git clone linkDoRepositório</code></pre>
+            <p>
+                Esse comando permite que você faça uma cópia do seu repositório online em qualquer outra máquina de
+                forma local. Assim você pode realizar todas as alterações necessárias e enviá-las pro repositório online
+                novamente! Bem legal, não é?
+            </p>
+        </section>
+        <section class="sectionManual">
+            <h3>Pull: Atualizar a pasta local de acordo com o repositório</h3>
+            <p>Lembra da viagem que você fez hipoteticamente no comando anterior? Agora você já voltou para casa e pode
+                realizar suas mudanças no seu próprio notebook, certo? Certo, mas antes você precisa fazer uma coisinha,
+                por que agora a sua máquina está desatualizada com o que está no repositório online! Então, para trazer
+                toda alteração que foi feita e atualizar a pasta local da sua máquina basta utilizar o seguinte comando:
+            </p>
+            <pre> <code>git pull</code></pre>
+        </section>
+
+        <section class="sectionManual">
+            <h3>Branch:O que é, como utilizar</h3>
+            <p>Branch é uma ramificação a partir de um repositório original. Um repositório pode ter várias branches,
+                nelas você pode alterar como desejar os arquivos que existem sem afetar diretamente a branch original. A
+                ideia das branches vem do pensamento de que várias pessoas podem realizar um projeto em conjunto e ao
+                mesmo tempo, assim utilizando as branches, por exemplo, as alterações podem ser feitas de forma
+                individual sem gerar conflitos ou sobrescrever algo que o outro fez. </p>
+            <p>Para criar uma nova branch basta digitar o seguinte comando:</p>
+            <pre> <code>git checkout -b nomeDaBranch</code></pre>
+            <p class="dicaManual">
+                <span><strong>Dica!</strong> Antes de executar o comando para criar uma nova branch é interessante você primeiro trocar para a branch
+                na qual você quer que a nova branch se baseie. Para fazer isso basta executar:
+            </p>
+            <pre> <code>git checkout nomeDaBranchQueQueroMeBasear</code></pre>
+
+            <p>Isso é importante para que você não crie a partir de uma branch que não é a original, já que a original é
+                sempre a mais atualizada! Logo em seguida, pode executar o comando com o -b para criar a branch nova.
+            </p>
+
+            <p>O próximo passo é colocar como upstream e executar um push para a sua branch ir para o repositório remoto
+                de fato: </p>
+            <pre> <code>git push --set-upstream origin nomeDaBranch</code></pre>
+            <!--setar como upstream mostra ahead e behind da origin e possibilita o uso de push e pull sem precisar referenciar a branch todas as vezes-->
+
+            <p>Agora se você precisar visualizar as branches locais do seu repositório, você pode listar com o comando
+                abaixo:</p>
+            <pre> <code>git branch</code></pre>
+
+        </section>
+        <section class="sectionManual">
+            <h3>Merge: Mesclar alterações entre branches</h3>
+            <p>O merge serve para mesclar as alterações que foram feitas entre as branches. Num projeto, geralmente o
+                que é feito é sempre atualizar a sua branch particular com o que está na branch original (master), pois
+                alguma alteração nova pode ter sido feita por alguém e você não tem ela localmente ainda. Quando o
+                comando de merge é executado a partir do nome da branch que você quer puxar as informações, você precisa
+                digitar uma mensagem assim como no commit. Vamos lá? Digite o comando:</p>
+            <pre> <code>git merge nomeDaBranch </code></pre>
+            <p>Nesse caso, uma nova janela vai abrir para que você digite a mensagem do merge. Depois é só digitar :wq
+                que elá escreverá e fechará a caixa. E prontinho!</p>
+            <p>Ah! Para facilitar você pode digitar a mensagem diramente no comando de merge, basta utilizar esse
+                comando:</p>
+            <pre> <code>git merge nomeDaBranch –m  “mensagem do merge” </code></pre>
+
+        </section>
     </article>
-    <aside>
-        Aqui vai o aside
-    </aside>
-    <footer>
-        <small>VUC - 2021 © Todos os direitos reservados.</small>
-    </footer>
+
 </body>
+
 </html>
