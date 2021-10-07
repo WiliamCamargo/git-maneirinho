@@ -9,6 +9,20 @@
 /* h1, h2, a{
     text-transform: uppercase;
 } */
+h1 {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 20pt;
+  text-align: center;
+}
+
+h2 {
+  background-color: black;
+  color: #b9faf8;
+  padding: 10px;
+  text-align: center;
+  font-size: 15pt;
+}
 
 /* Estilo do Header */
 header {
@@ -28,18 +42,18 @@ nav {
   box-shadow: -1px 4px 12px -8px #888;
 }
 
-ul li {
+nav ul li {
   display: inline;
 }
 
-ul li a {
+nav ul li a {
   color: black;
   text-decoration: none;
   padding: 6px;
   border-radius: 3px;
 }
 
-ul li a:hover {
+nav ul li a:hover {
   color: #b9faf8;
   background-color: black;
   transition: linear 0.5s;
@@ -47,26 +61,40 @@ ul li a:hover {
 
 /* Estilo do Footer */
 
+
 footer {
   clear: both;
+  width: 100%;
+    text-align: center;
+    height: 30px;
+    background: linear-gradient(to right, #6f2dbd, #b80deb, #b9faf8);
+}
+
+small{
+    vertical-align: sub;
+}
+
+
+/* Estilo Home */
+
+#home article, #equipe article{
+    float: left;
+    width: 80%;
+}
+#home article p{
+    padding: 10px;
+}
+#home aside{
+    float: right;
+    padding: 0 10px;
+    text-align: center;
 }
 
 /* Estilo Página Tutoriais */
 
-/* #tutoriais article {
-  background-color: white;
-  margin: 0px auto 0px auto;
-} */
-
-/* .topico {
-  width: 1024px;
-  text-align: center;
-} */
-
 .esquerda {
   width: 50%;
   float: left;
-  
 }
 
 .direita {
@@ -74,45 +102,38 @@ footer {
   float: right;
 }
 
-.esquerda, .direita{
-    background-color: white;
-    text-align: center;
-    height: 750px;
+.esquerda,
+.direita {
+  background-color: white;
+  text-align: center;
+  height: 750px;
 }
 
-.esquerda h3, .direita h3{
-    padding: 10px;
-    text-align: start;
+.esquerda h3,
+.direita h3 {
+  padding: 10px;
+  text-align: start;
 }
-.esquerda p, .direita p{
-    padding: 20px ;
-    background: border-box;
-    text-align: start;
-    height: 50px;
+.esquerda p,
+.direita p {
+  padding: 20px;
+  background: border-box;
+  text-align: start;
+  height: 50px;
 }
-.instalacao{
-    height: 550px;
+.instalacao {
+  height: 550px;
 }
 
-#tutoriais h1, #tutoriais h2 {
+#tutoriais h1,
+#tutoriais h2 {
   clear: both;
 }
 
 /* Estilo Página Manual */
 
-h1 {
-  width: 100%;
-  padding: 10px 0;
-  font-size: 20pt;
-  text-align: center;
-}
-
-h2 {
-  background-color: black;
-  color: #b9faf8;
-  padding: 10px;
-  text-align: center;
-  font-size: 15pt;
+#manual{
+    overflow-x: hidden;
 }
 .cardManual {
   /* background-color: #a663cc; */
@@ -125,6 +146,7 @@ h2 {
   text-align: center;
   padding: 20px;
   background: linear-gradient(to right, #6f2dbd, #b80deb, #b9faf8);
+  
 }
 
 .iconesManual {
@@ -199,4 +221,87 @@ code {
   right: -4px;
   position: absolute;
   z-index: -1;
+}
+
+/* Estilo do Case */
+
+#case section{
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+#case section p{
+    width: 100%;
+  margin: 18px 0;
+  text-align: left;
+}
+#case h3{
+    padding: 10px;
+}
+
+/* Equipe Estilo */
+.imgEquipe {
+    width: 200px;
+    height: 200px;
+    background: white;
+    border-radius: 100%;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    top: 15px;
+}
+.imgEquipe::before {
+    border-radius: 100%;
+    content: '';
+    background: linear-gradient(to right, #6f2dbd, #b80deb, #b9faf8);
+    top: -10px;
+    left: -10px;
+    bottom: -10px;
+    right: -10px;
+    position: absolute;
+    z-index:-1;
+}
+
+.imgEquipe img{
+    border-radius: 100%;
+}
+.info{
+    padding: 10px;
+    margin: 50px 0 15px 0;
+    text-align: center;
+}
+#equipe aside{
+    float: right;
+    width: 20%;
+}
+
+#equipe aside section{
+    height: 343px;
+}
+#equipe aside section:nth-child(3){
+    height: 387.4px;
+}
+#equipe aside section h2{
+    height: 25.261px;
+}
+
+#equipe aside ul{
+   height: 100%;
+   padding-left: 90px;
+}
+
+#equipe aside ul li{
+    padding: 30px 0 0 0;
+}
+
+/* Bibliografia css */
+
+#bibliografia article ul{
+    padding: 40px;
+}
+
+#bibliografia footer{
+    bottom: 0;
+    position: fixed;
 }
