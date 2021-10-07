@@ -277,7 +277,13 @@ code {
 }
 
 #equipe aside section{
-    height: 400px;
+    height: 343px;
+}
+#equipe aside section:nth-child(3){
+    height: 387.4px;
+}
+#equipe aside section h2{
+    height: 25.261px;
 }
 
 #equipe aside ul{
