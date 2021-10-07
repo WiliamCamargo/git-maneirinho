@@ -60,26 +60,7 @@ nav ul li a:hover {
 }
 
 /* Estilo do Footer */
-.circle {
-    width: 200px;
-    height: 200px;
-    background: white;
-    border-radius: 100%;
-    position: relative;
-    text-align: center;
-    box-sizing: border-box;
-}
-.circle::before {
-    border-radius: 100%;
-    content: '';
-    background-image: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%);
-    top: -10px;
-    left: -10px;
-    bottom: -10px;
-    right: -10px;
-    position: absolute;
-    z-index:-1;
-}
+
 
 footer {
   clear: both;
@@ -96,7 +77,7 @@ small{
 
 /* Estilo Home */
 
-#home article{
+#home article, #equipe article{
     float: left;
     width: 80%;
 }
@@ -257,4 +238,53 @@ code {
 }
 #case h3{
     padding: 10px;
+}
+
+/* Equipe Estilo */
+.imgEquipe {
+    width: 200px;
+    height: 200px;
+    background: white;
+    border-radius: 100%;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    top: 15px;
+}
+.imgEquipe::before {
+    border-radius: 100%;
+    content: '';
+    background: linear-gradient(to right, #6f2dbd, #b80deb, #b9faf8);
+    top: -10px;
+    left: -10px;
+    bottom: -10px;
+    right: -10px;
+    position: absolute;
+    z-index:-1;
+}
+
+.imgEquipe img{
+    border-radius: 100%;
+}
+.info{
+    padding: 10px;
+    margin: 50px 0 15px 0;
+    text-align: center;
+}
+#equipe aside{
+    float: right;
+    width: 20%;
+}
+
+#equipe aside section{
+    height: 400px;
+}
+
+#equipe aside ul{
+   height: 100%;
+   padding-left: 90px;
+}
+
+#equipe aside ul li{
+    padding: 30px 0 0 0;
 }
