@@ -1,63 +1,202 @@
 @charset "UTF-8";
 
-html {
-    background-color: lightslategrey;
+/* Seletores gerais */
+* {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
-body {
-    background-color: white;
-    width: 1100px;
-    margin: 0px auto 0px auto;
-}
-
-*{
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-}
-
-nav ul {
-    list-style-type: none;
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    padding: 10px 10px;
-    color: black;
+/* h1, h2, a{
     text-transform: uppercase;
-    text-decoration: none;
+} */
+
+/* Estilo do Header */
+header {
+  height: 150px;
+  margin: 0 auto;
+  text-align: center;
 }
 
-nav ul li a:hover {
-    color: white;
-    background-color: purple;
+header img {
+  margin-top: 10px;
 }
 
-nav, article {
-    padding: 22px 22px 0px 22px;
+nav {
+  padding-bottom: 10px;
+  text-align: left;
+  width: 100%;
+  box-shadow: -1px 4px 12px -8px #888;
 }
 
-.topico {
-    width: 1024px;
-    text-align: center;
+ul li {
+  display: inline;
 }
+
+ul li a {
+  color: black;
+  text-decoration: none;
+  padding: 6px;
+  border-radius: 3px;
+}
+
+ul li a:hover {
+  color: #b9faf8;
+  background-color: black;
+  transition: linear 0.5s;
+}
+
+/* Estilo do Footer */
+
+footer {
+  clear: both;
+}
+
+/* Estilo Página Tutoriais */
+
+/* #tutoriais article {
+  background-color: white;
+  margin: 0px auto 0px auto;
+} */
+
+/* .topico {
+  width: 1024px;
+  text-align: center;
+} */
 
 .esquerda {
-    width: 50%;
-    float: left;
+  width: 50%;
+  float: left;
+  
 }
 
 .direita {
-    width: 50%;
-    float: right;
+  width: 50%;
+  float: right;
 }
+
+.esquerda, .direita{
+    background-color: white;
+    text-align: center;
+    height: 750px;
+}
+
+.esquerda h3, .direita h3{
+    padding: 10px;
+    text-align: start;
+}
+.esquerda p, .direita p{
+    padding: 20px ;
+    background: border-box;
+    text-align: start;
+    height: 50px;
+}
+.instalacao{
+    height: 550px;
+}
+
+#tutoriais h1, #tutoriais h2 {
+  clear: both;
+}
+
+/* Estilo Página Manual */
 
 h1 {
-    clear: both;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 20pt;
+  text-align: center;
 }
 
-footer {
-    clear: both;
+h2 {
+  background-color: black;
+  color: #b9faf8;
+  padding: 10px;
+  text-align: center;
+  font-size: 15pt;
+}
+.cardManual {
+  /* background-color: #a663cc; */
+  /* background-color: #6f2dbd; */
+  /* background-color: #b298dc; */
+  /* background-color: #b80deb; */
+  /* background-color: #b9faf8; */
+  display: inline-flex;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(to right, #6f2dbd, #b80deb, #b9faf8);
+}
+
+.iconesManual {
+  width: 33%;
+}
+
+.iconesManual h3 {
+  font-size: 10pt;
+  color: #b9faf8;
+}
+.iconesManual img {
+  /* background-color: #a663cc; */
+  /* background-color: #6f2dbd; */
+  /* background-color: #b298dc; */
+  /* background-color: #b80deb; */
+  padding: 45px;
+}
+
+.sectionManual {
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+}
+.sectionManual p {
+  width: 100%;
+  margin: 18px 0;
+}
+
+pre {
+  /* background-color: #a663cc; */
+  /* background-color: #6f2dbd; */
+  /* background-color: #b298dc; */
+  /* background-color: #b80deb; */
+  /* background-color: #b9faf8; */
+  background-color: black;
+  padding: 10px;
+  border-radius: 3px;
+}
+code {
+  /* color: #a663cc; */
+  /* color: #6f2dbd; */
+  /* color: #b298dc; */
+  /* color: #b80deb; */
+  /* color: #b9faf8; */
+  color: white;
+  font-family: monospace;
+}
+
+.simplesCode {
+  background-color: rgb(231, 229, 229);
+  padding: 2px;
+  border-radius: 3px;
+  color: black;
+  font-size: 8pt;
+  font-weight: bold;
+}
+.dicaManual {
+  width: 100%;
+  background: white;
+  position: relative;
+  padding: 8px;
+  box-sizing: border-box;
+  font-size: 10pt;
+}
+/* Faz borda em gradient */
+.dicaManual::before {
+  background: linear-gradient(to right, #6f2dbd, #b80deb, #b9faf8);
+  content: "";
+  top: -4px;
+  left: -4px;
+  bottom: -4px;
+  right: -4px;
+  position: absolute;
+  z-index: -1;
 }
