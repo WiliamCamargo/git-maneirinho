@@ -93,6 +93,22 @@ small{
     vertical-align: sub;
 }
 
+
+/* Estilo Home */
+
+#home article{
+    float: left;
+    width: 80%;
+}
+#home article p{
+    padding: 10px;
+}
+#home aside{
+    float: right;
+    padding: 0 10px;
+    text-align: center;
+}
+
 /* Estilo Página Tutoriais */
 
 .esquerda {
